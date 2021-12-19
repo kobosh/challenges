@@ -57,43 +57,10 @@ public class Launcher{
 
 	public static void main(String[] args)  {
 		 List<List<Integer>> arr = new ArrayList<>();
-		String[] top= {"1", "1", "1", "0", "0","0"};// {"12","9","3","3"};
-		String[] mid= {"0", "1", "0", "0", "0","0"};//{"1","9","5","1"};
-		String[] bot={"1", "1", "1", "0", "0","0"};// {"12","19","8","-1"};
-		String[] ro= {"0", "0", "2", "4", "4","0"};// {"2","-9","2","-11"};
-		String[] ro1={"0", "0", "0", "2", "0","0"};//
-		String[] ro2={"0", "0", "1", "2", "4","0"};//
-		/*
-		  1 1 1 0 0 0
-0 1 0 0 0 0
-1 1 1 0 0 0
-0 0 2 4 4 0
-0 0 0 2 0 0
-0 0 1 2 4 0 8
-*/
-		 
-
-		List<Integer> topl=new ArrayList<>();
-		List<Integer> midl=new ArrayList<>();
-		List<Integer> botl=new ArrayList<>();
-		List<Integer> rol=new ArrayList<>();
-		List<Integer> rol1=new ArrayList<>();
-		List<Integer> rol2=new ArrayList<>();
-		for (int i = 0; i < 6; i++) {
-			
-			int t=(Integer.parseInt(top[i]));
-			topl.add(t);
-			midl.add(Integer.parseInt(mid[i]));
-			botl.add(Integer.parseInt(bot[i]));
-			rol.add(Integer.parseInt(ro[i]));
-			rol1.add(Integer.parseInt(ro1[i]));
-			rol2.add(Integer.parseInt(ro2[i]));
-			
-			
-		}
 		
 		
-		/*
+		
+		/*      test sample from Hack bank
 		 7 6 8 2 4 3
 7 3 3 0 6 1
 3 8 7 7 2 2
@@ -129,7 +96,7 @@ int mid1=1;
 loopMid(arr, lmid, loopRow,mid1 );
 
 
-loopBottom(arr, lbot, loopRow);
+loopRow(arr, lbot, loopRow);
 
 start++;
 row=start;
@@ -174,7 +141,7 @@ System.out.println("max "+max);
 		
 	}
 
-	private static void loopBottom(List<List<Integer>> arr,List<Integer> lbot,int loopRow
+/*	private static void loopBottom(List<List<Integer>> arr,List<Integer> lbot,int loopRow
 			) {
 		//int start=0;int col=0; 
 		
@@ -190,7 +157,7 @@ System.out.println("max "+max);
 			
 		}
 		row++;
-	}
+	}*/
 
 	private static void loopMid(List<List<Integer>> arr,List<Integer> lmid,int loopRow,int mid) {
 		
